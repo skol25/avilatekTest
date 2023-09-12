@@ -4,7 +4,7 @@ import logo from '../public/logo.png';
 
 function HomePage() {
   return (
-    <div className="min-h-screen w-screen bg-white flex dark:bg-black">
+    <div className="h-screen bg-white flex dark:bg-black">
       <section className="max-w-screen-md m-auto h-full">
         <article className="">
           <a href="https://avilatek.dev" target="_blank" rel="noreferrer">
