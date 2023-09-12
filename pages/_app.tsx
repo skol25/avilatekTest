@@ -4,6 +4,8 @@ import Router from 'next/router';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import '../styles.css';
+import RedLine from '../components/BaseRed';
+import RedLineBottom from '../components/baseRedBottom';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -19,12 +21,30 @@ function MyApp({ Component, pageProps }: AppProps) {
       NProgress.done();
     });
   }, []);
+  const socialMediaIconsData = [
+    {
+      src: '/assets/icons/instagramIcon.svg',
+      alt: 'Instagram',
+      link: 'https://www.instagram.com/',
+    },
+    {
+      src: '/assets/icons/twitterIcon.svg',
+      alt: 'Twitter',
+      link: 'https://twitter.com/',
+    },
+    {
+      src: '/assets/icons/facebookIcon.svg',
+      alt: 'Facebook',
+      link: 'https://www.facebook.com/',
+    },
+  ];
   return (
     <>
-      <Head>
-        <title>Plantilla Next.js | Avila Tek</title>
-      </Head>
+      <RedLine socialMediaIcons={socialMediaIconsData} />
+
       <Component {...pageProps} />
+
+      <RedLineBottom />
     </>
   );
 }
