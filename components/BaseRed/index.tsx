@@ -10,7 +10,7 @@ const RedLine: React.FC<RedLineProps> = ({ socialMediaIcons }) => (
     <div className="mr-6">
       <CustomButton />
     </div>
-    <IconsLine socialMediaIcons={socialMediaIcons} />
+    <IconsLine socialMediaIcons={socialMediaIcons} iconColor="" />
   </div>
 );
 
