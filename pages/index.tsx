@@ -11,6 +11,9 @@ import CategorySection from '../components/categorySection';
 import Product from '../components/product';
 import SectionAdd from '../components/sectionAdd';
 import ImageGallery from '../components/galery';
+import Service from '../components/service';
+import ServiceList from '../components/serviceList';
+import InfoWithBrands from '../components/infoWithBrands';
 
 function HomePage() {
   const productsData = [
@@ -173,6 +176,51 @@ function HomePage() {
     },
   ];
 
+  const servicesData = [
+    {
+      image: '/assets/images/categoryImage.svg',
+      title: 'Peluquería',
+      subtitle:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
+    },
+    {
+      image: '/assets/images/categoryImage.svg',
+      title: 'Odontología',
+      subtitle:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
+    },
+    {
+      image: '/assets/images/categoryImage.svg',
+      title: 'Veterinario',
+      subtitle:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
+    },
+    {
+      image: '/assets/images/categoryImage.svg',
+      title: 'Entrenamiento',
+      subtitle:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
+    },
+    {
+      image: '/assets/images/categoryImage.svg',
+      title: 'Psicología canina',
+      subtitle:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
+    },
+    {
+      image: '/assets/images/categoryImage.svg',
+      title: 'Fiestas de cumpleaños',
+      subtitle:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
+    },
+  ];
+  const brandsData = [
+    '/assets/images/marcaLogo.svg',
+    '/assets/images/marcaLogo.svg',
+    '/assets/images/marcaLogo.svg',
+    '/assets/images/marcaLogo.svg',
+  ];
+
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
@@ -264,6 +312,19 @@ function HomePage() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut
             viverra fames sed.
           </p>
+          <ServiceList services={servicesData} />
+
+          <div />
+        </div>
+        <div>
+          <TitleSections
+            smallText="Lorem ipsum dolor sit amet."
+            largeText="Trabajamos con las mejores marcas"
+          />
+          <InfoWithBrands
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed."
+            brands={brandsData}
+          />
 
           <div />
         </div>

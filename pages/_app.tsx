@@ -5,6 +5,7 @@ import { AppProps } from 'next/app';
 import '../styles.css';
 import RedLine from '../components/BaseRed';
 import RedLineBottom from '../components/baseRedBottom';
+import Footer from '../components/footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -42,7 +43,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <RedLine socialMediaIcons={socialMediaIconsData} />
 
       <Component {...pageProps} />
-
+      <div className="p-4">
+        <Footer />
+      </div>
       <RedLineBottom />
     </>
   );
