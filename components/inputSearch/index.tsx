@@ -18,7 +18,7 @@ const InputSearch: React.FC<InputSearchProps> = ({ setSearchTerm }) => {
         className=" border-none outline-none px-3 py-2  text-[#C8C2BE]"
         value={inputValue}
         onChange={handleInputChange}
-        onClick={(e) => e.target.setSelectionRange(0, e.target.value.length)} // Seleccionar todo al
+        onClick={(e) => e.target?.setSelectionRange(0, e.target?.value.length)} // Seleccionar todo al
       />
 
       <img
