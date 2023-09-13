@@ -148,7 +148,7 @@ function HomePage() {
       caption: 'Descripción de la primera imagen',
     },
     {
-      image: '/assets/images/Banner.svg',
+      image: '/assets/images/pexels-lumn-406014.jpg',
       caption: 'Descripción de la segunda imagen',
     },
     // Agrega más diapositivas según tus necesidades
@@ -243,7 +243,7 @@ function HomePage() {
           <div className="mt-8 mb-12">
             <TitleSections
               smallText="Lorem ipsum dolor sit amet."
-              largeText="Una gran variedad de categorías"
+              largeText="UNA GRAN VARIEDAD DE CATEGORIAS"
             />
           </div>
           <CategorySection data={categoryData} />
@@ -253,7 +253,7 @@ function HomePage() {
           <div className="mt-8 mb-12">
             <TitleSections
               smallText="Lorem ipsum dolor sit amet."
-              largeText="Productos destacados"
+              largeText="PRODUCTOS DESTACADOS"
             />
           </div>
 
@@ -276,7 +276,7 @@ function HomePage() {
           <div className="mt-8 mb-12">
             <TitleSections
               smallText="Lorem ipsum dolor sit amet."
-              largeText="Productos populares"
+              largeText="PRODUCTOS POPULARES"
             />
           </div>
 
@@ -302,7 +302,7 @@ function HomePage() {
           <div className="mt-8 mb-12">
             <TitleSections
               smallText="Lorem ipsum dolor sit amet."
-              largeText="Productos destacados"
+              largeText="PRODUCTOS DESTACADOS"
             />
           </div>
           <div>
@@ -313,14 +313,14 @@ function HomePage() {
             />
           </div>
         </div>
-        <div className="mt-8 mb-12">
+        <div className="mt-24 mb-12">
           <div className="mt-8 mb-12">
             <TitleSections
               smallText="Lorem ipsum dolor sit amet."
-              largeText="Nuestros servicios"
+              largeText="NUESTROS SERVICIOS"
             />
 
-            <p className="text-gray-700 text-sm">
+            <p className="text-gray-700 text-sm mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit
               ut viverra fames sed.
             </p>
@@ -329,11 +329,11 @@ function HomePage() {
 
           <div />
         </div>
-        <div className="mt-8 mb-12">
+        <div className="mt-24 mb-12">
           <div className="mb-4">
             <TitleSections
               smallText="Lorem ipsum dolor sit amet."
-              largeText="Trabajamos con las mejores marcas"
+              largeText="TRABAJAMOS CON LAS MEJORES MARCAS"
             />
           </div>
           <InfoWithBrands
