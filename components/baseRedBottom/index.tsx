@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RedLineBottom: React.FC = () => (
+const RedLineBottom = () => (
   <>
     <div className="flex justify-between pl-4 pr-4">
       <img
