@@ -11,7 +11,7 @@ const Service: React.FC<ServiceProps> = ({ image, title, subtitle }) => (
     <div className="">
       <img src={image} alt={title} className="w-20 h-20" />
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
-      <p className="text-gray-600">{subtitle}</p>
+      <p className="text-gray-600 text-sm font-regular">{subtitle}</p>
     </div>
   </div>
 );

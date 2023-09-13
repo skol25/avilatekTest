@@ -239,26 +239,32 @@ function HomePage() {
 
       <Carousel slides={slidesData} />
       <div className="mx-auto max-w-screen-lg p-4">
-        <div className="mt-8 mb-8">
-          <TitleSections
-            smallText="Lorem ipsum dolor sit amet."
-            largeText="Una gran variedad de categorías"
-          />
+        <div className="mt-8 mb-12">
+          <div className="mt-8 mb-12">
+            <TitleSections
+              smallText="Lorem ipsum dolor sit amet."
+              largeText="Una gran variedad de categorías"
+            />
+          </div>
           <CategorySection data={categoryData} />
         </div>
-        <div className="mt-8 mb-8">
-          <TitleSections
-            smallText="Lorem ipsum dolor sit amet."
-            largeText="Productos destacados"
-          />
-          <div>
+
+        <div className="mt-8 mb-12">
+          <div className="mt-8 mb-12">
+            <TitleSections
+              smallText="Lorem ipsum dolor sit amet."
+              largeText="Productos destacados"
+            />
+          </div>
+
+          <div className="mt-8 mb-12">
             <SectionAdd
               image="/assets/images/Ad.svg"
               productsData={productsData}
             />
           </div>
         </div>
-        <div className="mt-8 mb-8">
+        <div className="mt-12 mb-12">
           <ImageGallery
             images={[
               '/assets/images/shutterstock.svg',
@@ -267,10 +273,12 @@ function HomePage() {
           />
         </div>
         <div className="mt-8 mb-8">
-          <TitleSections
-            smallText="Lorem ipsum dolor sit amet."
-            largeText="Productos populares"
-          />
+          <div className="mt-8 mb-12">
+            <TitleSections
+              smallText="Lorem ipsum dolor sit amet."
+              largeText="Productos populares"
+            />
+          </div>
 
           <div className="flex justify-between">
             {productsData2 &&
@@ -287,14 +295,16 @@ function HomePage() {
               ))}
           </div>
         </div>
-        <div className="mt-8 mb-8">
+        <div className="mt-12 mb-12">
           <ImageGallery images={['/assets/images/Ad2.svg']} />
         </div>
         <div className="mt-4 mb-10">
-          <TitleSections
-            smallText="Lorem ipsum dolor sit amet."
-            largeText="Productos destacados"
-          />
+          <div className="mt-8 mb-12">
+            <TitleSections
+              smallText="Lorem ipsum dolor sit amet."
+              largeText="Productos destacados"
+            />
+          </div>
           <div>
             <SectionAdd
               image="/assets/images/Ad.svg"
@@ -303,24 +313,29 @@ function HomePage() {
             />
           </div>
         </div>
-        <div className="mt-8 mb-10">
-          <TitleSections
-            smallText="Lorem ipsum dolor sit amet."
-            largeText="Nuestros servicios"
-          />
-          <p className="text-gray-700 text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut
-            viverra fames sed.
-          </p>
+        <div className="mt-8 mb-12">
+          <div className="mt-8 mb-12">
+            <TitleSections
+              smallText="Lorem ipsum dolor sit amet."
+              largeText="Nuestros servicios"
+            />
+
+            <p className="text-gray-700 text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit
+              ut viverra fames sed.
+            </p>
+          </div>
           <ServiceList services={servicesData} />
 
           <div />
         </div>
-        <div className="mt-8 mb-8">
-          <TitleSections
-            smallText="Lorem ipsum dolor sit amet."
-            largeText="Trabajamos con las mejores marcas"
-          />
+        <div className="mt-8 mb-12">
+          <div className="mb-4">
+            <TitleSections
+              smallText="Lorem ipsum dolor sit amet."
+              largeText="Trabajamos con las mejores marcas"
+            />
+          </div>
           <InfoWithBrands
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed."
             brands={brandsData}
