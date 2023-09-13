@@ -14,7 +14,7 @@ const RedLineBottom: React.FC<div> = () => (
         className="h-10 w-10 text-gray-500"
       />
     </div>
-    <div className="bg-red-500 flex justify-center p-2 w-full pl-4 pr-4">
+    <div className="bg-[#E2081E] flex justify-center p-2 w-full pl-4 pr-4">
       <h2 className="text-[#FEFEFE]">
         Copyright © 2021 Maxi Pet. Todos los Derechos Reservados. Desarrollado
         por Avila Tek

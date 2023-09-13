@@ -11,7 +11,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="flex justify-center space-x-8 text-gray-600 text-sm mt-4">
+    <nav className="flex justify-center space-x-12 text-[14px] mt-4">
       {navBarItems.map((item, index) => (
         <a key={index} href={item.link} className="hover:text-black">
           {item.text}

@@ -136,7 +136,7 @@ function HomePage() {
       link: '#',
     },
     {
-      src: '/assets/icons/ShoppingcartIcon.svg',
+      src: '/assets/icons/Shoppingcart.svg',
       alt: 'shopping',
       link: '#',
     },
