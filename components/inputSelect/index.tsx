@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/button-has-type */
+/* eslint-disable prettier/prettier */
 import React from 'react';
 
 const CustomButton = () => (
