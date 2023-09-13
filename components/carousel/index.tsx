@@ -37,8 +37,8 @@ const Carousel = ({ slides }) => {
           <div
             key={index}
             onClick={() => goToSlide(index)} // Cambia al índice seleccionado al hacer clic
-            className={`w-16 h-2 mr-3 bg-gray-300 rounded-full cursor-pointer transition-transform ${
-              currentIndex === index ? 'scale-125 bg-[#E2081E]' : '' // Resalta el indicador si es el índice actual
+            className={`w-16 h-2 mr-3  rounded-full cursor-pointer transition-transform ${
+              currentIndex == index ? 'scale-125 bg-[#E2081E]' : 'bg-gray-300' // Resalta el indicador si es el índice actual
             }`}
           />
         ))}
