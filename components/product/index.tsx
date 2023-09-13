@@ -39,16 +39,16 @@ const Product: React.FC<ProductProps> = ({ image, title, rating, price }) => {
   return (
     <div className="bg-white rounded-md shadow-md p-2 w-40">
       <img src={image} alt={title} className="w-full h-auto rounded-md" />
-      <h2 className="text-sm font-semibold mt-2">{title}</h2>
+      <h2 className="text-sm font-medium text-[#333333] mt-2">{title}</h2>
       <div className="flex items-center mt-1">
         <div className="flex">
           {filledStarsArray}
           {emptyStarsArray}
         </div>
-        <span className="ml-1 text-gray-600">({rating})</span>
+        <span className="ml-1 text-gray-600" />
       </div>
       <div className="mt-1">
-        <span className="text-base font-semibold">${price}</span>
+        <span className="text-sm font-light text-[#5F5F5F]">${price}</span>
       </div>
       {/* Reemplaza el botón actual con el componente PButton */}
       <PButton

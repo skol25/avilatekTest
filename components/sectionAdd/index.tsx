@@ -21,12 +21,12 @@ const SectionAdd: React.FC<SectionAddProps> = ({
   const productsPosition = invertirPosiciones ? 'order-1' : 'order-2';
 
   return (
-    <div className="flex">
-      <div className={`w-1/4 ${imagePosition} h-full`}>
+    <div className="flex gap-6">
+      <div className={`w-1/4 ${imagePosition}`}>
         <img
           src={image}
           alt="Imagen de la oferta"
-          className="w-full h-full object-cover"
+          className="w-full h-1/2 object-cover h-[733px]"
         />
       </div>
       <div className={`w-3/4 ${productsPosition}`}>

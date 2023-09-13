@@ -1,4 +1,23 @@
 import React from 'react';
+import IconsLine from '../IconsLine';
+
+const socialMediaIconsData = [
+  {
+    src: '/assets/icons/instagramiconGrey.svg',
+    alt: 'Instagram',
+    link: 'https://www.instagram.com/',
+  },
+  {
+    src: '/assets/icons/twitterGray.svg',
+    alt: 'Twitter',
+    link: 'https://twitter.com/',
+  },
+  {
+    src: '/assets/icons/facebookGray.svg',
+    alt: 'Facebook',
+    link: 'https://www.facebook.com/',
+  },
+];
 
 const Footer: React.FC = () => (
   <footer className="text-white py-4">
@@ -35,6 +54,12 @@ const Footer: React.FC = () => (
           <p className="text-gray-500">soporte@maxipet.com</p>
           <p className="text-gray-500">Lunes a Viernes</p>
           <p className="text-gray-500">9:00 a.m. - 5:00 p.m.</p>
+          <div className="flex justify-start">
+            <IconsLine
+              socialMediaIcons={socialMediaIconsData}
+              iconColor="fill-[#243c5a]"
+            />
+          </div>
         </div>
       </div>
     </div>
