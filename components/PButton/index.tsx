@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 import React, { useState } from 'react';
 import { PButtonProps } from '../../types/components/pButton';
 
