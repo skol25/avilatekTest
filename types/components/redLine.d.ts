@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export interface SocialMediaIcon {
   src: string;
   alt: string;

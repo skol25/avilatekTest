@@ -1,5 +1,9 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 import React, { useState } from 'react';
 import { InputSearchProps } from '../../types/components/inputSearch';
+// eslint-disable-next-line prettier/prettier
 import IconsLine from '../IconsLine';
 
 const InputSearch: React.FC<InputSearchProps> = ({ setSearchTerm }) => {

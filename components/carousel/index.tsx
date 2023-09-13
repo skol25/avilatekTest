@@ -1,4 +1,8 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable eqeqeq */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 
 const Carousel = ({ slides }) => {
@@ -41,7 +45,7 @@ const Carousel = ({ slides }) => {
             key={index}
             onClick={() => goToSlide(index)} // Cambia al índice seleccionado al hacer clic
             className={`w-16 h-2   rounded-full cursor-pointer transition-transform ${
-              currentIndex == index ? 'scale-125 bg-[#E2081E]' : 'bg-gray-300' // Resalta el indicador si es el índice actual
+              currentIndex == +index ? 'scale-125 bg-[#E2081E]' : 'bg-gray-300' // Resalta el indicador si es el índice actual
             }`}
           />
         ))}

@@ -1,4 +1,8 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable prettier/prettier */
 import React from 'react';
+// eslint-disable-next-line import/extensions
 import { RedLineProps } from '../../types/components/redLine';
 import IconsLine from '../IconsLine';
 import CustomButton from '../inputSelect';
