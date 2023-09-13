@@ -6,5 +6,5 @@ export interface SocialMediaIcon {
 
 export interface RedLineProps {
   socialMediaIcons: SocialMediaIcon[];
-  iconColor: string;
+  iconColor?: string;
 }
