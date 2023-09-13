@@ -1,4 +1,5 @@
 import React from 'react';
+import PButton from '../PButton';
 
 interface ProductProps {
   image: string;
@@ -49,9 +50,15 @@ const Product: React.FC<ProductProps> = ({ image, title, rating, price }) => {
       <div className="mt-1">
         <span className="text-base font-semibold">${price}</span>
       </div>
-      <button className="mt-1 bg-blue-500 text-white px-2 py-1 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">
-        Comprar
-      </button>
+      {/* Reemplaza el botón actual con el componente PButton */}
+      <PButton
+        buttonType="primary"
+        text="Comprar"
+        imageSrc="/assets/icons/ShoppingcartIcon.svg"
+        onClick={() => {
+          // Tu función de clic aquí
+        }}
+      />
     </div>
   );
 };

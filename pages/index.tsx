@@ -239,14 +239,14 @@ function HomePage() {
 
       <Carousel slides={slidesData} />
       <div className="mx-auto max-w-screen-lg p-4">
-        <div>
+        <div className="mt-8 mb-8">
           <TitleSections
             smallText="Lorem ipsum dolor sit amet."
             largeText="Una gran variedad de categorías"
           />
           <CategorySection data={categoryData} />
         </div>
-        <div>
+        <div className="mt-8 mb-8">
           <TitleSections
             smallText="Lorem ipsum dolor sit amet."
             largeText="Productos destacados"
@@ -258,7 +258,7 @@ function HomePage() {
             />
           </div>
         </div>
-        <div>
+        <div className="mt-8 mb-8">
           <ImageGallery
             images={[
               '/assets/images/shutterstock.svg',
@@ -266,7 +266,7 @@ function HomePage() {
             ]}
           />
         </div>
-        <div>
+        <div className="mt-8 mb-8">
           <TitleSections
             smallText="Lorem ipsum dolor sit amet."
             largeText="Productos populares"
@@ -287,10 +287,10 @@ function HomePage() {
               ))}
           </div>
         </div>
-        <div>
+        <div className="mt-8 mb-8">
           <ImageGallery images={['/assets/images/Ad2.svg']} />
         </div>
-        <div>
+        <div className="mt-4 mb-10">
           <TitleSections
             smallText="Lorem ipsum dolor sit amet."
             largeText="Productos destacados"
@@ -303,7 +303,7 @@ function HomePage() {
             />
           </div>
         </div>
-        <div>
+        <div className="mt-8 mb-10">
           <TitleSections
             smallText="Lorem ipsum dolor sit amet."
             largeText="Nuestros servicios"
@@ -316,7 +316,7 @@ function HomePage() {
 
           <div />
         </div>
-        <div>
+        <div className="mt-8 mb-8">
           <TitleSections
             smallText="Lorem ipsum dolor sit amet."
             largeText="Trabajamos con las mejores marcas"

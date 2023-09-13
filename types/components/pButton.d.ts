@@ -4,4 +4,5 @@ export type PButtonProps = {
   className?: string;
   disable?: boolean;
   onClick?: mouseEventHandler<HTMLButtonElement>;
+  imageSrc?: string;
 };

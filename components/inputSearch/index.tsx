@@ -11,13 +11,14 @@ const InputSearch: React.FC<InputSearchProps> = ({ setSearchTerm }) => {
   };
 
   return (
-    <div className="flex justify-center items-center border rounded">
+    <div className="flex justify-center items-center border rounded overflow-hidden">
       <input
         type="text"
         placeholder="Buscar"
-        className="focus:outline-none active:outline-none border-none outline-none"
+        className="focus:outline-none active:outline-none border-none outline-none px-3 py-2 text-base text-C8C2BE"
         value={inputValue}
         onChange={handleInputChange}
+        onClick={(e) => e.target.setSelectionRange(0, e.target.value.length)} // Seleccionar todo al hacer clic
       />
 
       <img

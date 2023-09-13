@@ -9,7 +9,7 @@ const CategorySection = ({ data }) => (
           alt={item.text}
           className="max-w-full h-auto"
         />
-        <p className="text-center">{item.text}</p>
+        <p className="text-center font-semibold text-[#333333]">{item.text}</p>
       </div>
     ))}
   </div>

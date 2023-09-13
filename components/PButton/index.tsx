@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import Typography from '@components/Typography';
+import React, { useState } from 'react';
 import { PButtonProps } from '../../types/components/pButton';
 
 const PButton = ({
@@ -8,6 +7,7 @@ const PButton = ({
   text,
   disable,
   className,
+  imageSrc,
 }: PButtonProps) => {
   const [clickPressed, setClickPressed] = useState(false);
 
@@ -26,7 +26,7 @@ const PButton = ({
   const colorButton = `
     ${
       buttonType === 'primary'
-        ? 'text-white bg-red-500 hover:bg-red-400'
+        ? 'text-white bg-[#E2081E] hover:bg-red-400'
         : 'text-red-500 bg-white hover:text-white hover:bg-red-500'
     }
   `;
@@ -40,16 +40,11 @@ const PButton = ({
       onMouseLeave={handleClickLeave}
       onClick={onClick}
       disabled={disable}
-      className={`h-10 px-4 rounded font-medium ${className} ${colorButton}`}
+      className={`h-10 px-4 rounded font-medium ${className} ${colorButton} flex items-center justify-center`}
     >
-      <div className="flex items-center justify-center">
-        {text && (
-          <Typography
-            text={text}
-            className={`mx-2 ${clickPressed && 'text-white'}`}
-          />
-        )}
-      </div>
+      {imageSrc && <img src={imageSrc} alt="Icono" className="w-4 h-4 mr-2" />}
+      {/* Mostrar la imagen si está presente */}
+      {text && <p className={`mx-2 ${clickPressed && 'text-white'}`}>{text}</p>}
     </button>
   );
 };
